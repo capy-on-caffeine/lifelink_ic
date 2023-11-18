@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "lifelink_backend": {
+      "main": "src/lifelink_backend/main.mo",
+      "type": "motoko"
+    },
+    "lifelink_frontend": {
+      "dependencies": [
+        "lifelink_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/lifelink_frontend/src/index.html"
+      },
+      "source": [
+        "src/lifelink_frontend/assets",
+        "dist/lifelink_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
