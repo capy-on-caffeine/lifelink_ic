@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>lifelink</title>
-    <base href="/" />
-    <link rel="icon" href="favicon.ico" />
-    <link type="text/css" rel="stylesheet" href="main.css" />
-  </head>
-  <body>
-    <main>
-      <img src="logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting"></section>
-    </main>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | LifeLink</title>
+    <link rel="stylesheet" href="../assets/main.css">
+    <link rel="stylesheet" href="../assets/navbar.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../assets/Images/icon.png">
+            <span>Lifelink</span>
+        </div>
+        <div class="link"><a id="homeLink"><span class="active">Home</span></a></div>
+        <div class="link"><a id="aboutLink"><span>About Us</span></a></div>
+        <div class="link"><a id="bloodLink"><span>Find Blood</span></a></div>
+        <div class="link sign-in"><span>Sign In</span></div>
+    </div>
+
+    <!-- MAIN AREA STARTS -->
+    <div class="context">
+        <h1>Connect <span>Blood.</span> Connect <span>Life</span></h1>
+        <h3>Join the movement for an improved healthcare</h3>
+        <div class="buttons">
+            <div class="btn">Blood Banks</div>
+            <div class="btn">Donors</div>
+        </div>
+    </div>
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
 </html>
