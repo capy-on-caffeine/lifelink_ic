@@ -15,65 +15,6 @@
   left: 0;
 }
 
-.menu {
-  position: fixed;
-  width: 20%;
-  left: 0;
-  top: 0;
-  background-color: hsl(0, 0%, 98%);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: center;
-}
-
-.menu a {
-  text-decoration: none;
-}
-
-.btn {
-  padding: 10px;
-  color: #000;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 35px;
-  cursor: pointer;
-  width: 55%;
-  margin: 15px 20px 0px 20px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  transition: all 0.2s ease;
-}
-
-.active-btn {
-  background-color: hsl(0, 0%, 100%);
-  box-shadow: 0 2px 15px 0px hsla(0, 0%, 50%, 0.1);
-}
-
-.btn:nth-child(1) {
-  margin-top: 40px;
-}
-
-.btn:hover {
-  background-color: hsl(0, 0%, 95%);
-  transition: all 0.2s ease;
-}
-
-#dashboard-icon {
-  width: 17px;
-  position: relative;
-  top: 10%;
-  margin-right: 5px;
-}
-
-#findblood-icon {
-  width: 22px;
-  position: relative;
-  top: 20%;
-  margin-right: 5px;
-}
-
 .dashboard {
   position: absolute;
   width: 80%;
@@ -84,7 +25,7 @@
   display: block;
 }
 
-.dashboard > h1, .findblood-screen > h1 {
+.dashboard h1, .findblood-screen h1 {
   position: relative;
   left: 11%;
   width: 40%;
@@ -92,9 +33,18 @@
   font-size: 1.1rem;
 }
 
+.hospital-card-container {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 50%;
+  /* background: #2cc805; */
+}
+
 .hospital-card {
   width: 80%;
-  height: 35%;
+  height: 70%;
   background-image: url("../Images/card-bg.png");
   background-size: 100% 100%;
   background-position: center;
@@ -123,28 +73,31 @@
   font-weight: 900;
 }
 
-.update-btn {
-  /* padding: 10px; */
-  position: relative;
+.update-btn, .request-btn {
+  position: absolute;
   display: inline-block;
-  margin-top: 30px;
+  bottom: 0;
+  /* margin-top: 30px; */
   padding: 10px 20px;
   color: #000;
-  /* text-align: center; */
   text-decoration: none;
   border-radius: 35px;
   cursor: pointer;
-  /* width: 55%; */
-  /* margin: 20px 20px 0px 20px; */
-  /* font-size: 0.8rem; */
-  /* font-weight: 700; */
   transition: all 0.2s ease;
   background-color: hsl(194, 100%, 50%);
 }
 
-.update-btn:hover {
+.update-btn:hover, .request-btn:hover {
   background-color: hsl(194, 100%, 60%);
   transition: all 0.2s ease;
+}
+
+.cards-super-container {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
 }
 
 .card-container {
@@ -163,9 +116,10 @@
   height: 208px;
   flex-shrink: 0;
   border-radius: 27px;
-  background: #2cc805;
+  background: hsl(108, 95%, 40%);
   position: relative;
-  margin: 3.6%;
+  margin: 3.9%;
+  cursor: pointer;
 }
 
 .card > span {
@@ -173,7 +127,7 @@
   width: 107px;
   height: 105px;
   flex-shrink: 0;
-  color: #4eff22;
+  color: hsl(108, 100%, 57%);
   /* font-family: Inter; */
   font-size: 77px;
   font-style: normal;
@@ -189,7 +143,7 @@
   height: 208px;
   flex-shrink: 0;
   border-radius: 27px;
-  background: rgba(0, 0, 0, 0.43);
+  background: rgba(0, 0, 0, 0.25);
 }
 
 .card-overlay > span {
@@ -214,6 +168,46 @@
   display: none;
 }
 
+.search-hospital-btn {
+  left: 13%;
+  position: relative;
+  display: inline-block;
+  /* margin-top: 30px; */
+  top: -6.5%;
+  padding: 10px 20px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: hsl(194, 100%, 50%);
+}
+
+.search-hospital-btn:hover {
+  transition: all 0.2s ease;
+  background-color: hsl(194, 100%, 60%);
+}
+
 .request-blood-selected {
-  border: 3px solid dodgerblue;
+  background: rgba(0, 0, 0, 0.43);
+}
+
+.results-container {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.results {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 50%;
+}
+
+.results .hospital-card {
+  margin-top: 5%;
 }

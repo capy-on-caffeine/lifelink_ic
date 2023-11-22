@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LifeLink</title>
-    <link rel="stylesheet" href="../assets/relog.css">
-    <link rel="stylesheet" href="../assets/navbar.css">
+    <link rel="stylesheet" href="relog.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
     <div class="navbar">
         <div class="logo">
-            <img src="../assets/Images/icon.png">
+            <img src="..\Images\icon.png">
             <span>Lifelink</span>
         </div>
-        <div class="link"><a id="homeLink"><span>Home</span></a></div>
-        <div class="link"><a id="aboutLink"><span>About Us</span></a></div>
+        <div class="link"><a id="homeLink" href="index.html"><span class="active">Home</span></a></div>
+        <div class="link"><a id="aboutLink" href="dashboard.html"><span>About Us</span></a></div>
         <div class="link"><a id="bloodLink"><span>Find Blood</span></a></div>
-        <div class="link sign-in"><span>Sign In</span></div>
+        <div class="link sign-in"><a id="signinLink" href="relog.html"><span>Sign In</span></a></div>
     </div>
 
     <div class="left-wrapper">
-        <img src="../assets/Images/round.png" id="round-img">
+        <img src="../Images/round.png" id="round-img">
         <p class="tagline">
             Be a hero, donate blood. Your generosity can make a world of difference
         </p>
     </div>
 
     <div class="right-wrapper">
-        <img src="../assets/Images/patient.png" id="patient-img">
+        <img src="../Images/patient.png" id="patient-img">
         <div class="container">
             <div class="selector"><div class="hoffman" style="left: 0;"><span class="sel active-form" id="one" onclick="regact()">Register</span></div>
             <div class="hoffman" style="right: 0;"><span class="sel" id="two" onclick="logact()">Login</span></div></div>

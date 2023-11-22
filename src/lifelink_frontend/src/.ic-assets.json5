@@ -34,6 +34,10 @@
             // See: https://owasp.org/www-community/attacks/Clickjacking.
             "X-Frame-Options": "DENY",
 
+            /*
+                comment out above 3 if using cdn
+            */
+
             // Security: Avoids forwarding referrer information to other origins.
             // See: https://owasp.org/www-project-secure-headers/#referrer-policy.
             "Referrer-Policy": "same-origin",

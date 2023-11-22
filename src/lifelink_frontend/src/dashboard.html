@@ -4,87 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../assets/dashboard.css">
-    <link rel="stylesheet" href="../assets/navbar.css">
-    <link rel="stylesheet" href="../assets/modal.css">
+    <link rel="stylesheet" href="/dashboard.css">
+    <link rel="stylesheet" href="/navbar.css">
+    <link rel="stylesheet" href="/modal.css">
+    <link rel="stylesheet" href="/menu.css">
 </head>
 <body id="bd">
     <div class="navbar">
         <div class="logo">
-            <img src="../assets/Images/icon.png">
+            <img src="/Images/icon.png">
             <span>Lifelink</span>
         </div>
-        <div class="link"><a id="homeLink"><span>Home</span></a></div>
-        <div class="link"><a id="aboutLink"><span>About Us</span></a></div>
+        <div class="link"><a id="homeLink" href="index.html"><span class="active">Home</span></a></div>
+        <div class="link"><a id="aboutLink" href="dashboard.html"><span>About Us</span></a></div>
         <div class="link"><a id="bloodLink"><span>Find Blood</span></a></div>
-        <div class="link sign-in"><span>Sign In</span></div>
+        <div class="link sign-in"><a id="signinLink" href="relog.html"><span>Sign In</span></a></div>
     </div>
     <div class="main-wrapper" id="wrap">
         <div class="menu">
             <div class="pad-elem"></div>
-            <div class="btn active-btn" id="dashboardBtn"><img src="../assets/Images/dashboard-icon.png" id="dashboard-icon">Dashboard</div>
-            <div class="btn" id="findbloodBtn"><img src="../assets/Images/findblood-icon.png" id="findblood-icon">Find Blood</div>
+            <div class="btn active-btn" id="dashboardBtn"><img src="/Images/dashboard-icon.png" id="dashboard-icon">Dashboard</div>
+            <div class="btn" id="findbloodBtn"><img src="/Images/findblood-icon.png" id="findblood-icon">Find Blood</div>
+            <div class="btn" id="bloodRequestsBtn"><img src="/Images/heartbeat.png" id="requests-icon">Requests</div>
         </div>
         <div class="dashboard">
             <div class="pad-elem"></div>
-            
-            <h1>Analytics Overview</h1>
-            <div class="hospital-card">
-                <div class="hospital-info">
-                    <span class="name">Sacred Heart Hospital</span>
-                    <span class="address">Grand Trunk Rd, near Petrol Pump, Maqsudan</span>
-                    <div class="update-btn" id="updateBtn">Update</div>
+            <div class="hospital-card-container">
+                <h1>Analytics Overview</h1>
+                <div class="hospital-card">
+                    <div class="hospital-info">
+                        <span class="name">Sacred Heart Hospital</span>
+                        <span class="address">Grand Trunk Rd, near Petrol Pump, Maqsudan</span>
+                        <div class="update-btn" id="updateBtn">Update</div>
+                    </div>
                 </div>
             </div>
-
-            <h1>Blood Stats</h1>
-            <div class="card-container">
-                <div class="card">
-                    <span>A+</span>
-                    <div class="card-overlay">
-                        <span>46</span>
+            
+            <div class="cards-super-container">
+                <h1>Blood Stats</h1>
+                <div class="card-container">
+                    <div class="card">
+                        <span>A+</span>
+                        <div class="card-overlay">
+                            <span>46</span>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <span>B+</span>
-                    <div class="card-overlay">
-                        <span>83</span>
+                    <div class="card">
+                        <span>B+</span>
+                        <div class="card-overlay">
+                            <span>83</span>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <span>AB+</span>
-                    <div class="card-overlay">
-                        <span>10</span>
+                    <div class="card">
+                        <span>AB+</span>
+                        <div class="card-overlay">
+                            <span>10</span>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <span>O+</span>
-                    <div class="card-overlay">
-                        <span>22</span>
+                    <div class="card">
+                        <span>O+</span>
+                        <div class="card-overlay">
+                            <span>22</span>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <span>A-</span>
-                    <div class="card-overlay">
-                        <span>13</span>
+                    <div class="card">
+                        <span>A-</span>
+                        <div class="card-overlay">
+                            <span>13</span>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <span>B-</span>
-                    <div class="card-overlay">
-                        <span>31</span>
+                    <div class="card">
+                        <span>B-</span>
+                        <div class="card-overlay">
+                            <span>31</span>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <span>AB-</span>
-                    <div class="card-overlay">
-                        <span>4</span>
+                    <div class="card">
+                        <span>AB-</span>
+                        <div class="card-overlay">
+                            <span>4</span>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <span>O-</span>
-                    <div class="card-overlay">
-                        <span>1</span>
+                    <div class="card">
+                        <span>O-</span>
+                        <div class="card-overlay">
+                            <span>1</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,86 +98,92 @@
         <div class="findblood-screen">
             <div class="pad-elem"></div>
 
-            <h1>Request Blood</h1>
-            <div class="card-container">
-                <div class="card request-blood" id="a+">
-                    <span>A+</span>
-                    <div class="card-overlay">
-                        <span>46</span>
+            <div class="cards-super-container">
+
+                <h1>Request Blood</h1>
+                <div class="card-container">
+                    <div class="card request-blood" id="a+">
+                        <span>A+</span>
+                        <div class="card-overlay card-overlay-request-screen">
+                            <span>46</span>
+                        </div>
+                    </div>
+                    <div class="card request-blood" id="b+">
+                        <span>B+</span>
+                        <div class="card-overlay card-overlay-request-screen">
+                            <span>83</span>
+                        </div>
+                    </div>
+                    <div class="card request-blood" id="ab+">
+                        <span>AB+</span>
+                        <div class="card-overlay card-overlay-request-screen">
+                            <span>10</span>
+                        </div>
+                    </div>
+                    <div class="card request-blood" id="o+">
+                        <span>O+</span>
+                        <div class="card-overlay card-overlay-request-screen">
+                            <span>22</span>
+                        </div>
+                    </div>
+                    <div class="card request-blood" id="a-">
+                        <span>A-</span>
+                        <div class="card-overlay card-overlay-request-screen">
+                            <span>13</span>
+                        </div>
+                    </div>
+                    <div class="card request-blood" id="b-">
+                        <span>B-</span>
+                        <div class="card-overlay card-overlay-request-screen">
+                            <span>31</span>
+                        </div>
+                    </div>
+                    <div class="card request-blood" id="ab-">
+                        <span>AB-</span>
+                        <div class="card-overlay card-overlay-request-screen">
+                            <span>4</span>
+                        </div>
+                    </div>
+                    <div class="card request-blood" id="o-">
+                        <span>O-</span>
+                        <div class="card-overlay card-overlay-request-screen">
+                            <span>1</span>
+                        </div>
                     </div>
                 </div>
-                <div class="card request-blood" id="b+">
-                    <span>B+</span>
-                    <div class="card-overlay">
-                        <span>83</span>
-                    </div>
-                </div>
-                <div class="card request-blood" id="ab+">
-                    <span>AB+</span>
-                    <div class="card-overlay">
-                        <span>10</span>
-                    </div>
-                </div>
-                <div class="card request-blood" id="o+">
-                    <span>O+</span>
-                    <div class="card-overlay">
-                        <span>22</span>
-                    </div>
-                </div>
-                <div class="card request-blood" id="a-">
-                    <span>A-</span>
-                    <div class="card-overlay">
-                        <span>13</span>
-                    </div>
-                </div>
-                <div class="card request-blood" id="b-">
-                    <span>B-</span>
-                    <div class="card-overlay">
-                        <span>31</span>
-                    </div>
-                </div>
-                <div class="card request-blood" id="ab-">
-                    <span>AB-</span>
-                    <div class="card-overlay">
-                        <span>4</span>
-                    </div>
-                </div>
-                <div class="card request-blood" id="o-">
-                    <span>O-</span>
-                    <div class="card-overlay">
-                        <span>1</span>
-                    </div>
-                </div>
+                <div class="search-hospital-btn" id="searchHospitalBtn">Search</div>
             </div>
 
-            <h1>Analytics Overview</h1>
-            <div class="results">
-                <div class="hospital-card">
-                    <div class="hospital-info">
-                        <span class="name">Sacred Heart Hospital</span>
-                        <span class="address">Grand Trunk Rd, near Petrol Pump, Maqsudan</span>
-                        <div class="update-btn" id="updateBtn">Update</div>
+            <h1>Available Hospitals</h1>
+            <div class="results-container">
+                <div class="results">
+                    <div class="hospital-card">
+                        <div class="hospital-info">
+                            <span class="name">Sacred Heart Hospital</span>
+                            <span class="address">Grand Trunk Rd, near Petrol Pump, Maqsudan</span>
+                            <div class="request-btn" id="10001">Request</div>
+                        </div>
                     </div>
-                </div>
-                <div class="hospital-card">
-                    <div class="hospital-info">
-                        <span class="name">Lajwanti Hospital</span>
-                        <span class="address">8H8P+8FP, Cool Road, near All India Radio, Jawahar Nagar, Jalandhar</span>
-                        <div class="update-btn" id="updateBtn">Update</div>
+                    <div class="hospital-card">
+                        <div class="hospital-info">
+                            <span class="name">Lajwanti Hospital</span>
+                            <span class="address">8H8P+8FP, Cool Road, near All India Radio, Jawahar Nagar, Jalandhar</span>
+                            <div class="request-btn" id="10002">Request</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="modal-wrapper">
-        <form action="#" method="post">
+        <form action="#" method="post" class="form-box">
             <input type="text" id="name" name="name" placeholder="Name" required>
             <input type="text" id="address" name="address" placeholder="Address" required>
             <input type="email" id="email" name="email" placeholder="Email" required>
             <input type="password" id="password" name="password" placeholder="Password" required>
             <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
-            <button id="submitUpdateBtn">Update</button>
-            <button id="cancelBtn">Cancel</button>
+            <button type="button" id="submitUpdateBtn">Update</button>
+            <button type="button" id="cancelBtn">Cancel</button>
           </form>
     </div>
     <script src="script.js"></script>

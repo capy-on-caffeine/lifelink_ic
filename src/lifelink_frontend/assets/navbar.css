@@ -80,6 +80,11 @@
     width: 0;
 }
 
+.link a {
+    text-decoration: none;
+    color: #000;
+}
+
 .active::after {
     width: 100%;
 }

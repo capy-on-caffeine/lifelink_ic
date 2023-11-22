@@ -1,0 +1,65 @@
+.menu {
+    position: fixed;
+    width: 20%;
+    left: 0;
+    top: 0;
+    background-color: hsl(0, 0%, 98%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .menu a {
+    text-decoration: none;
+  }
+  
+  .btn {
+    padding: 10px;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 35px;
+    cursor: pointer;
+    width: 55%;
+    margin: 15px 20px 0px 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: all 0.2s ease;
+  }
+  
+  .active-btn {
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 2px 15px 0px hsla(0, 0%, 50%, 0.1);
+  }
+  
+  .btn:nth-child(1) {
+    margin-top: 40px;
+  }
+  
+  .btn:hover {
+    background-color: hsl(0, 0%, 95%);
+    transition: all 0.2s ease;
+  }
+  
+  #dashboard-icon {
+    width: 17px;
+    position: relative;
+    top: 10%;
+    margin-right: 5px;
+  }
+  
+  #findblood-icon {
+    width: 22px;
+    position: relative;
+    top: 20%;
+    margin-right: 5px;
+  }
+  
+  #requests-icon {
+    width: 26px;
+    position: relative;
+    top: 20%;
+    margin-right: 5px;
+  }
